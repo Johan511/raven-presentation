@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Reveal.js Presentation</title>
+    <!-- Include Reveal.js core styles -->
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+    <!-- Include a theme (you can change "black" to another theme if you like) -->
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides" id="slides-container">
+            <!-- Slide 1 -->
+            <section>
+                <div style="font-size: 1.75em;">Media Over QUIC Transport</div style="font-size: 1.75em;"> <br>
+                <div style="font-size: 1.125em;">A proposed solution for Low Latency Media Dissemination</div
+                    style="font-size: 1.125em;">
+            </section>
+
+
+
+            <style>
+                /* Container for the entire chart */
+                .latency-chart {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    background-color: #303030;
+                    border: 1px solid #ddd;
+                    border-radius: 6px;
+                    overflow: hidden;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                }
+
+                /* Top row with 4 colored columns */
+                .chart-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    color: #fff;
+                }
+
+                .chart-column {
+                    flex: 1;
+                    padding: 20px;
+                }
+
+                .common-http-latency {
+                    border-radius: 0px 0px 6px 6px;
+                    background-color: #5C6BC0;
+                    /* You can adjust these colors to match the original image */
+                }
+
+                .reduced-latency {
+                    border-radius: 0px 0px 6px 6px;
+                    background-color: #FFA726;
+                }
+
+                .low-latency {
+                    border-radius: 0px 0px 6px 6px;
+                    background-color: #EF5350;
+                }
+
+                .near-real-time {
+                    border-radius: 0px 0px 6px 6px;
+                    background-color: #26A69A;
+                }
+
+                /* Headings and list items inside columns */
+                .chart-column h3 {
+                    margin-bottom: 15px;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+
+                .chart-column ul li {
+                    margin-bottom: 6px;
+                    font-size: 0.95rem;
+                }
+
+                /* Timeline container (bottom section) */
+                .timeline-container {
+                    position: relative;
+                    padding: 40px 20px;
+                    /* space for markers */
+                    margin: 0 20px 20px;
+                }
+
+                /* Dashed line across the container */
+                .timeline {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    height: 0;
+                    border-top: 2px dashed #999;
+                    transform: translateY(-50%);
+                }
+
+                /* Each marker (the text + protocol boxes) */
+                .marker {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    text-align: center;
+                }
+
+                .marker-time {
+                    background-color: #fff;
+                    color: #333;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    padding: 4px 6px;
+                    font-size: 0.85rem;
+                    margin-bottom: 6px;
+                    white-space: nowrap;
+                }
+
+                /* Protocol “boxes” */
+                .protocols span {
+                    display: inline-block;
+                    background-color: #424242;
+                    color: #fff;
+                    border-radius: 0.3rem;
+                    padding: 1px 4px;
+                    font-size: 1.25rem;
+                    margin: 2px;
+                }
+
+                /*
+				Example left positions to simulate spacing:
+				- Adjust these percentages to approximate
+				the real timeline positions from the image.
+				*/
+                .marker-45sec {
+                    left: 15%;
+                }
+
+                .marker-5sec {
+                    left: 40%;
+                }
+
+                .marker-1to5sec {
+                    left: 53%;
+                }
+
+                .why-better {
+                    left: 40%;
+                }
+
+                .why-better-text {
+                    font-size: 2rem;
+                    background-color: #272822;
+                    color: #ddd;
+                }
+
+                .credits {
+                    font-size: 10px;
+                    /* Adjust this value to make the text smaller if needed */
+                    color: grey;
+                    /* You can also use a hex code like #888 for a specific shade */
+                    text-align: right;
+                    position: absolute;
+                }
+            </style>
+            <section data-auto-animate>
+                Quick rundown of existing Media Streaming Protocols
+                <br>
+                <br>
+                <div class="latency-chart">
+                    <!-- Top row: 4 columns -->
+                    <div class="chart-row">
+                        <div class="chart-column common-http-latency">
+                            <h3>Common HTTP Latency</h3>
+                            <ul>
+                                <li>One-way streams</li>
+                                <li>Live events</li>
+                                <li>Large audiences</li>
+                                <li>Linear programming</li>
+                            </ul>
+                        </div>
+                        <div class="chart-column reduced-latency">
+                            <h3>Reduced Latency</h3>
+                            <ul>
+                                <li>OTT (over the top) providers</li>
+                                <li>Live streaming</li>
+                                <li>News &amp; sports</li>
+                            </ul>
+                        </div>
+                        <div class="chart-column low-latency">
+                            <h3>Low Latency</h3>
+                            <ul>
+                                <li>UGC (user generated content)</li>
+                                <li>Live streams</li>
+                                <li>Video game streaming</li>
+                            </ul>
+                        </div>
+                        <div class="chart-column near-real-time">
+                            <h3>Near Real-Time</h3>
+                            <ul>
+                                <li>Two-way web conferencing</li>
+                                <li>Real-time device control</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="credits">
+                    https://www.cardinalpeak.com/blog/understanding-and-choosing-the-right-streaming-protocol
+                </div>
+            </section>
+            <section data-auto-animate>
+                Quick rundown of existing Media Streaming Protocols
+                <br>
+                <br>
+                <div class="latency-chart">
+                    <!-- Top row: 4 columns -->
+                    <div class="chart-row">
+                        <div class="chart-column common-http-latency">
+                            <h3>Common HTTP Latency</h3>
+                            <ul>
+                                <li>One-way streams</li>
+                                <li>Live events</li>
+                                <li>Large audiences</li>
+                                <li>Linear programming</li>
+                            </ul>
+                        </div>
+                        <div class="chart-column reduced-latency">
+                            <h3>Reduced Latency</h3>
+                            <ul>
+                                <li>OTT (over the top) providers</li>
+                                <li>Live streaming</li>
+                                <li>News &amp; sports</li>
+                            </ul>
+                        </div>
+                        <div class="chart-column low-latency">
+                            <h3>Low Latency</h3>
+                            <ul>
+                                <li>UGC (user generated content)</li>
+                                <li>Live streams</li>
+                                <li>Video game streaming</li>
+                            </ul>
+                        </div>
+                        <div class="chart-column near-real-time">
+                            <h3>Near Real-Time</h3>
+                            <ul>
+                                <li>Two-way web conferencing</li>
+                                <li>Real-time device control</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline row -->
+                    <div class="timeline-container">
+                        <div class="timeline"></div>
+
+                        <!-- Marker for 45+ seconds -->
+                        <div class="fragment marker marker-45sec">
+                            <div class="marker-time">10-30 seconds</div>
+                            <div class="protocols">
+                                <span>HLS</span>
+                                <span>DASH</span>
+                            </div>
+                        </div>
+
+                        <!-- Marker for 18 seconds -->
+                        <div class="fragment marker marker-5sec">
+                            <div class="marker-time">5 seconds</div>
+                            <div class="protocols">
+                                <span>RTMP</span>
+                            </div>
+                        </div>
+
+                        <!-- Marker for 5 seconds -->
+                        <div class="fragment marker marker-1to5sec">
+                            <div class="marker-time">1-5 seconds</div>
+                            <div class="protocols">
+                                <span>RTSP</span>
+                                <span>LL-HLS</span>
+                                <span>LL-DASH</span>
+                            </div>
+                        </div>
+                        <!-- Marker for 5 seconds -->
+                        <div class="fragment marker why-better">
+                            <div class="marker-time why-better-text">Why do we need something better?</div>
+                        </div>
+                    </div>
+                    <div class="credits">
+                        https://www.cardinalpeak.com/blog/understanding-and-choosing-the-right-streaming-protocol
+                    </div>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Cons of existing protocols</h3>
+                <text class="fragment"><b>A tug of war between Latency and Scalability</b></text>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Cons of existing protocols</h3>
+                <text><b>A tug of war between Latency and Scalability</b></text>
+
+                <div class="credits" style="right: 2.5em">https://www.phenixrts.com/resource/super-bowl-2024
+                </div>
+                <img src="assets/superbowl_latencies.png" alt="superbowl_latencies">
+            </section>
+
+            <section data-auto-animate>
+                <h3>Cons of existing protocols</h3>
+                <text><b>A tug of war between Latency and Scalability</b></text>
+                <table>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <br>
+                            <div style="font-size: 20px; text-align: center; padding-bottom: 10px;">
+                                Participant count of various platforms
+                            </div>
+                            <table style="font-size: 30px;">
+                                <thead>
+                                    <tr class="header">
+                                        <th></th>
+                                        <th>Meeting</th>
+                                        <th>Webinar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Zoom</td>
+                                        <td>1k</td>
+                                        <td>1M</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Teams</td>
+                                        <td>1k</td>
+                                        <td>20k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GMeet</td>
+                                        <td>500</td>
+                                        <td>1k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Webex</td>
+                                        <td>1k</td>
+                                        <td>100k</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </td>
+                        <td>
+                            <br>
+                            <div class="credits" style="right: 5em">https://www.phenixrts.com/resource/super-bowl-2024
+                            </div>
+                            <img src="assets/superbowl_latencies.png" alt="superbowl_latencies">
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="fragment"
+                    style="position: absolute; left:0; right: 0; top: 50%; width: 100%;; font-size: 0.9em; padding: 40px 20px; background-color: black; border-radius: 10px;">
+                    Single protocol which can be setup for latency or scalability
+                </div>
+
+                <div class="fragment"
+                    style="position: absolute; left:0; right: 0; top: 30%; width: 100%; font-size: 33px; color: yellow; padding: 40px 20px; background-color:#5C6BC0; border-radius: 10px;">
+                    <b>This talk focuses on MOQT as a solution for low latency transport</b>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Include Reveal.js core script -->
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script>
+        // Initialize Reveal.js
+        Reveal.initialize();
+    </script>
+</body>
+
+</html>
