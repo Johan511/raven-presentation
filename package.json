@@ -5,7 +5,7 @@
   "scripts": {
     "test": "gulp test",
     "start": "gulp serve",
-    "build": "gulp build"
+    "build": "node --version"
   },
   "author": "",
   "license": "ISC",
