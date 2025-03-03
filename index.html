@@ -3,11 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>My Reveal.js Presentation</title>
-    <!-- Include Reveal.js core styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
     <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
-    <!-- Include a theme (you can change "black" to another theme if you like) -->
     <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css">
 </head>
 
 <body>
@@ -367,14 +372,38 @@
                     <b>This talk focuses on MOQT as a solution for low latency transport</b>
                 </div>
             </section>
+
+            <section>
+                <h3>Cons of existing protocols</h3>
+                <b>Latency</b>
+            </section>
+
+            <section data-auto-animate>
+                <div style="font-size: 70px;">Why do we want lower latency?</div>
+                <br>
+                <div class="fragment" style="color: #EF5350;">Because, greed is good</div>
+            </section>
+
+            <section data-auto-animate>
+                
+            </section>
         </div>
     </div>
 
-    <!-- Include Reveal.js core script -->
     <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
+    <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
     <script>
-        // Initialize Reveal.js
-        Reveal.initialize();
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
     </script>
 </body>
 
