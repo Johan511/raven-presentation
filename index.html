@@ -387,24 +387,251 @@
             </section>
 
             <section data-auto-animate>
-                <div>What do we communicate between server and client?</div>
+                <div data-id="why-comm">What do we communicate between server and client?</div>
             </section>
 
             <section data-auto-animate>
-                <div>What do we communicate between server and client?</div>
+                <div data-id="why-comm">What do we communicate between server and client?</div>
                 <br>
-                <h4 class="fragment">Media</h4>
+                <h4>Media</h4>
                 <br>
                 <h4 class="fragment" style="color: #EF5350;">Congestion Control Information</h4>
             </section>
 
             <section>
-                <div>
-                    How do we communicate congestion control information at the application layer?
+                <div style="font-size: 35px;">
+                    High latencies mean slower adaptation to network conditions.
+                </div>
+            </section>
+
+            <style>
+                .group-box {
+                    border-radius: 10px;
+                    padding: 15px;
+                    margin: 20px;
+                    border: 3px solid #999;
+                    font-size: 20px;
+                }
+
+                .fragment.custom.group-box-requested {
+                    border: 3px solid #999;
+
+                }
+
+                .fragment.custom.group-box-received {
+                    background-color: inherit;
+                }
+
+                .fragment.custom.group-box-requested.visible {
+                    border: 3px solid rgb(42, 42, 207);
+                }
+
+                .fragment.custom.group-box-received.visible {
+                    background-color: green;
+                }
+
+                .group-box-requested {
+                    border: 3px solid rgb(42, 42, 207);
+                }
+
+                .group-box-received {
+                    background-color: green;
+                }
+
+                .group-box-cancel {
+                    border: 3px solid red;
+                }
+            </style>
+
+            <section data-transition="slide-in">
+                <div style="display: flex;">
+                    <div style="margin-right: 28.7%;"> 0s </div>
+                    <div style="margin-right: 28.7%;"> 2s </div>
+                    <div style="margin-right: 28.7%;"> 4s </div>
+                    <div> 6s </div>
                 </div>
 
+                <div data-fragment-index="1" class="fragment"
+                    style="width: 0%; border: 10px solid rgb(118, 81, 13); position: absolute; z-index: 10;"></div>
+                <div style="width: 100%; border: 10px solid wheat;"></div>
 
+                <div style="display: flex;">
+                    <div style="width: 33%;">
+                        <div data-fragment-index="1"
+                            class="group-box fragment custom group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            3 </div>
+                        <div data-fragment-index="1"
+                            class="group-box fragment custom group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            2 </div>
+                        <div data-fragment-index="1"
+                            class="group-box fragment custom group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            1 </div>
+                        <div data-fragment-index="1"
+                            class="group-box fragment custom group-box-requested group-box-received" data-id="layer">
+                            Base Layer </div>
+                    </div>
+
+                    <div style="width: 33%;">
+                        <div data-fragment-index="2" class="group-box fragment custom group-box-requested"
+                            data-id="layer"> Enhancement Layer 3 </div>
+                        <div data-fragment-index="2" class="group-box fragment custom group-box-requested"
+                            data-id="layer"> Enhancement Layer 2 </div>
+                        <div data-fragment-index="2" class="group-box fragment custom group-box-requested"
+                            data-id="layer"> Enhancement Layer 1 </div>
+                        <div data-fragment-index="2" class="group-box fragment custom group-box-requested"
+                            data-id="layer"> Base Layer </div>
+                    </div>
+
+                    <div style="width: 33%;">
+                        <div class="group-box" data-id="layer"> Enhancement Layer 3 </div>
+                        <div class="group-box" data-id="layer"> Enhancement Layer 2 </div>
+                        <div class="group-box" data-id="layer"> Enhancement Layer 1 </div>
+                        <div class="group-box" data-id="layer"> Base Layer </div>
+                    </div>
+                </div>
             </section>
+
+            <section data-transition="none">
+                <div style="display: flex;">
+                    <div style="margin-right: 28.7%;"> 0s </div>
+                    <div style="margin-right: 28.7%;"> 2s </div>
+                    <div style="margin-right: 28.7%;"> 4s </div>
+                    <div> 6s </div>
+                </div>
+
+                <div style="width: 33%; border: 10px solid rgb(118, 81, 13); position: absolute; z-index: 10;"></div>
+                <div style="width: 100%; border: 10px solid wheat;"></div>
+
+                <div style="display: flex;">
+                    <div style="width: 33%;">
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            3 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            2 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            1 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Base Layer </div>
+                    </div>
+
+                    <div style="width: 33%;">
+                        <div class="group-box group-box-requested" data-id="layer"> Enhancement Layer 3 </div>
+                        <div class="group-box group-box-requested" data-id="layer"> Enhancement Layer 2 </div>
+                        <div class="group-box group-box-requested" data-id="layer"> Enhancement Layer 1 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer"> Base Layer </div>
+                    </div>
+
+                    <div style="width: 33%;">
+                        <div class="group-box" data-id="layer"> Enhancement Layer 3 </div>
+                        <div class="group-box" data-id="layer"> Enhancement Layer 2 </div>
+                        <div class="group-box" data-id="layer"> Enhancement Layer 1 </div>
+                        <div class="group-box" data-id="layer"> Base Layer </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-transition="none" data-auto-animate>
+                <div style="display: flex;">
+                    <div style="margin-right: 28.7%;"> 0s </div>
+                    <div style="margin-right: 28.7%;"> 2s </div>
+                    <div style="margin-right: 28.7%;"> 4s </div>
+                    <div> 6s </div>
+                </div>
+
+                <div style="width: 50%; border: 10px solid rgb(118, 81, 13); position: absolute; z-index: 10;">
+                </div>
+                <div style="width: 100%; border: 10px solid wheat;"></div>
+
+                <div style="display: flex;">
+                    <div style="width: 33%;">
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            3 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            2 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            1 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Base Layer </div>
+                    </div>
+
+                    <div style="width: 33%;">
+                        <div class="group-box group-box-cancel" data-id="layer"> Enhancement Layer 3 </div>
+                        <div class="group-box group-box-cancel" data-id="layer"> Enhancement Layer 2 </div>
+                        <div class="group-box group-box-cancel" data-id="layer"> Enhancement Layer 1 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer"> Base Layer
+                        </div>
+                    </div>
+
+                    <div style="width: 33%;">
+                        <div class="group-box" data-id="layer"> Enhancement Layer 3 </div>
+                        <div class="group-box" data-id="layer"> Enhancement Layer 2 </div>
+                        <div class="group-box" data-id="layer"> Enhancement Layer 1 </div>
+                        <div class="group-box fragment custom group-box-requested" data-id="layer"> Base Layer
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-transition="none" data-auto-animate>
+                <div style="display: flex;">
+                    <div style="margin-right: 28.7%;"> 0s </div>
+                    <div style="margin-right: 28.7%;"> 2s </div>
+                    <div style="margin-right: 28.7%;"> 4s </div>
+                    <div> 6s </div>
+                </div>
+
+                <div style="width: 50%; border: 10px solid rgb(118, 81, 13); position: absolute; z-index: 10;">
+                </div>
+                <div style="width: 100%; border: 10px solid wheat;"></div>
+
+                <div style="display: flex;">
+                    <div style="width: 33%;">
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            3 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            2 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Enhancement Layer
+                            1 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer">
+                            Base Layer </div>
+                    </div>
+
+                    <div style="width: 33%;">
+                        <div class="group-box group-box-cancel" data-id="layer"> Enhancement Layer 3 </div>
+                        <div class="group-box group-box-cancel" data-id="layer"> Enhancement Layer 2 </div>
+                        <div class="group-box group-box-cancel" data-id="layer"> Enhancement Layer 1 </div>
+                        <div class="group-box group-box-requested group-box-received" data-id="layer"> Base Layer
+                        </div>
+                    </div>
+
+                    <div style="width: 33%;">
+                        <div class="group-box" data-id="layer"> Enhancement Layer 3 </div>
+                        <div class="group-box" data-id="layer"> Enhancement Layer 2 </div>
+                        <div class="group-box" data-id="layer"> Enhancement Layer 1 </div>
+                        <div class="group-box group-box-requested" data-id="layer"> Base Layer
+                        </div>
+                    </div>
+                </div>
+                One of two scenarios play out
+            </section>
+
+            <section>
+                Protocol with strict timing guarentees without compromising on latency
+            </section>
+
+
         </div>
     </div>
 
