@@ -730,7 +730,7 @@
                     <div style="margin-left: 20%; width: 73%; border: 10px solid wheat;"></div>
                     <div>
                         <div style="display: flex; font-size: 25px; margin-left: 28%;">
-                            <div style="margin-right: 26%;" class="fragment fade-left" data-fragment-index="1"> 500ms
+                            <div style="margin-right: 26%;" class="fragment fade-left" data-fragment-index="1"> 250ms
                             </div>
                         </div>
                         <div style="display: flex;">
@@ -775,9 +775,9 @@
                     <div style="margin-left: 20%; width: 73%; border: 10px solid wheat;"></div>
                     <div>
                         <div style="display: flex; font-size: 25px; margin-left: 28%;">
-                            <div style="margin-right: 26%;"> 500ms
+                            <div style="margin-right: 26%;"> 250ms
                             </div>
-                            <div style="margin-right: 20%;" class="fragment fade-left" data-fragment-index="1"> 500ms
+                            <div style="margin-right: 20%;" class="fragment fade-left" data-fragment-index="1"> 250ms
                             </div>
                         </div>
                         <div style="display: flex;">
@@ -836,10 +836,10 @@
                     <div style="margin-left: 20%; width: 73%; border: 10px solid wheat;"></div>
                     <div>
                         <div style="display: flex;">
-                            <div style="width: 20%; margin-left: 21.5%">500ms</div>
-                            <div style="width: 20%; margin-left: 5%">500ms</div>
+                            <div style="width: 20%; margin-left: 21.5%">250ms</div>
+                            <div style="width: 20%; margin-left: 5%">250ms</div>
                             <div class="fragment fade-left" data-fragment-index="0" style="width: 20%; margin-left: 7%">
-                                500ms</div>
+                                250ms</div>
                         </div>
                         <div style="display: flex;">
                             <div class="arrow" style="width: 20%; margin-left: 21.5%"></div>
@@ -899,37 +899,254 @@
                 </div>
             </section>
 
+            <style>
+                .netem-box {
+                    border: 1px solid grey;
+                    position: absolute;
+                    padding: 5px 20px;
+                    border-radius: 20px;
+                    font-size: 17px;
+                }
+            </style>
+
             <section>
-                <img style="height: 100%;" src="assets/snapshot_090.png" alt="snapshot_090">
+                <div class="netem-box" style="left: 15%; top: 20%">
+                    loss=0.5% <br> bitrate=16mbps<br> delay=20ms 2ms
+                </div>
+                <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
+                    <div>
+                        1mpbs
+                    </div>
+                    <div>
+                        2mpbs
+                    </div>
+                    <div>
+                        4mpbs
+                    </div>
+                    <div>
+                        8mpbs
+                    </div>
+                    <div>
+                        16mbps
+                    </div>
+                </div>
+                <img style="height: 100%;" src="assets/snapshot_101.png" alt="snapshot_090">
             </section>
 
             <section>
-                <img style="height: 100%;" src="assets/snapshot_100.png" alt="snapshot_100">
+                <div class="netem-box" style="left: 15%; top: 20%">
+                    loss=0.5% <br> bitrate=16mbps<br> delay=20ms 2ms
+                </div>
+                <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
+                    <div>
+                        1mpbs
+                    </div>
+                    <div>
+                        2mpbs
+                    </div>
+                    <div>
+                        4mpbs
+                    </div>
+                    <div>
+                        8mpbs
+                    </div>
+                    <div>
+                        16mbps
+                    </div>
+                </div>
+                <div style="position: absolute; font-size: 15px; left: 69%; top: 15.5%; text-align: right;">
+                    <div>
+                        101 (201)
+                    </div>
+                    <div>
+                        101 (160)
+                    </div>
+                    <div>
+                        96 (150)
+                    </div>
+                    <div>
+                        0 (15)
+                    </div>
+                    <div>
+                        0 (0)
+                    </div>
+                </div>
+                <img style="height: 100%;" src="assets/snapshot_180.png" alt="snapshot_100">
             </section>
 
             <section>
-                <img style="height: 100%;" src="assets/snapshot_190.png" alt="snapshot_190">
+                <div class="netem-box" style="left: 28%; top: 20%">
+                    loss=0.5% <br> bitrate=8mbps<br> delay=20ms 2ms
+                </div>
+                <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
+                    <div>
+                        1mpbs
+                    </div>
+                    <div>
+                        2mpbs
+                    </div>
+                    <div>
+                        4mpbs
+                    </div>
+                    <div>
+                        8mpbs
+                    </div>
+                    <div>
+                        16mbps
+                    </div>
+                </div>
+                <img style="height: 100%;" src="assets/snapshot_220.png" alt="snapshot_190">
             </section>
 
             <section>
-                <img style="height: 100%;" src="assets/snapshot_207.png" alt="snapshot_207">
+                <div class="netem-box" style="left: 28%; top: 20%">
+                    loss=0.5% <br> bitrate=8mbps<br> delay=20ms 2ms
+                </div>
+                <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
+                    <div>
+                        1mpbs
+                    </div>
+                    <div>
+                        2mpbs
+                    </div>
+                    <div>
+                        4mpbs
+                    </div>
+                    <div>
+                        8mpbs
+                    </div>
+                    <div>
+                        16mbps
+                    </div>
+                </div>
+                <div style="position: absolute; font-size: 15px; left: 73%; top: 15.5%; text-align: right;">
+                    <div>
+                        200
+                    </div>
+                    <div>
+                        134
+                    </div>
+                    <div>
+                        2
+                    </div>
+                    <div>
+                        0
+                    </div>
+                    <div>
+                        0
+                    </div>
+                </div>
+                <img style="height: 100%;" src="assets/snapshot_380.png" alt="snapshot_207">
             </section>
 
             <section>
-                <img style="height: 100%;" src="assets/snapshot_290.png" alt="snapshot_290">
+                <div class="netem-box" style="left: 43%; top: 20%">
+                    loss=3% <br> bitrate=4mbps<br> delay=20ms 2ms
+                </div>
+                <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
+                    <div>
+                        1mpbs
+                    </div>
+                    <div>
+                        2mpbs
+                    </div>
+                    <div>
+                        4mpbs
+                    </div>
+                    <div>
+                        8mpbs
+                    </div>
+                    <div>
+                        16mbps
+                    </div>
+                </div>
+                <div style="position: absolute; font-size: 15px; left: 73%; top: 15.5%; text-align: right;">
+                    <div>
+                        200
+                    </div>
+                    <div>
+                        2
+                    </div>
+                    <div>
+                        0
+                    </div>
+                    <div>
+                        0
+                    </div>
+                    <div>
+                        0
+                    </div>
+                </div>
+                <img style="height: 100%;" src="assets/snapshot_580.png" alt="snapshot_290">
             </section>
 
             <section>
-                <img style="height: 100%;" src="assets/snapshot_320.png" alt="snapshot_320">
+                <div class="netem-box" style="left: 56%; top: 20%">
+                    loss=0.5% <br> bitrate=65mbps<br> delay=20ms 2ms
+                </div>
+                <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
+                    <div>
+                        1mpbs
+                    </div>
+                    <div>
+                        2mpbs
+                    </div>
+                    <div>
+                        4mpbs
+                    </div>
+                    <div>
+                        8mpbs
+                    </div>
+                    <div>
+                        16mbps
+                    </div>
+                </div>
+                <img style="height: 100%;" src="assets/snapshot_606.png" alt="snapshot_320">
             </section>
 
             <section>
-                <img style="height: 100%;" src="assets/snapshot_401.png" alt="snapshot_401">
+                <div class="netem-box" style="left: 56%; top: 20%">
+                    loss=0.5% <br> bitrate=65mbps<br> delay=20ms 2ms
+                </div>
+                <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
+                    <div>
+                        1mpbs
+                    </div>
+                    <div>
+                        2mpbs
+                    </div>
+                    <div>
+                        4mpbs
+                    </div>
+                    <div>
+                        8mpbs
+                    </div>
+                    <div>
+                        16mbps
+                    </div>
+                </div>
+                <div style="position: absolute; font-size: 15px; left: 73%; top: 15.5%; text-align: right;">
+                    <div>
+                        198
+                    </div>
+                    <div>
+                        198
+                    </div>
+                    <div>
+                        196
+                    </div>
+                    <div>
+                        195
+                    </div>
+                    <div>
+                        191
+                    </div>
+                </div>
+                <img style="height: 100%;" src="assets/snapshot_780.png" alt="snapshot_401">
             </section>
 
-
             <section>
-                <img style="height: 100%;" src="assets/snapshot_420.png" alt="snapshot_420">
+                <video src="assets/dark_animation.mp4" controls autoplay loop></video>
             </section>
         </div>
     </div>
