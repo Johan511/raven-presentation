@@ -838,13 +838,13 @@
                         <div style="display: flex;">
                             <div style="width: 20%; margin-left: 21.5%">250ms</div>
                             <div style="width: 20%; margin-left: 5%">250ms</div>
-                            <div class="fragment fade-left" data-fragment-index="0" style="width: 20%; margin-left: 7%">
+                            <div class="fragment fade-left" data-fragment-index="1" style="width: 20%; margin-left: 7%">
                                 250ms</div>
                         </div>
                         <div style="display: flex;">
                             <div class="arrow" style="width: 20%; margin-left: 21.5%"></div>
                             <div class="arrow" style="width: 20%; margin-left: 5%"></div>
-                            <div class="arrow fragment fade-left" data-fragment-index="0"
+                            <div class="arrow fragment fade-left" data-fragment-index="1"
                                 style="width: 20%; margin-left: 7%"></div>
                         </div>
                     </div>
@@ -854,11 +854,12 @@
                         <div style="width: 20%;" class="group-box group-box-requested group-box-cancel">
                             E-Layer 3
                             Object</div>
-                        <div style="width: 20%;" class="group-box group-box-requested group-box-received">
+                        <div style="width: 20%;" class="group-box group-box-requested fragment custom group-box-cancel"
+                            data-fragment-index="2">
                             E-Layer 3
                             Object</div>
                         <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
-                            data-fragment-index="0"> E-Layer 3
+                            data-fragment-index="1"> E-Layer 3
                             Object</div>
                     </div>
 
@@ -867,11 +868,84 @@
                         <div style="width: 20%;" class="group-box group-box-requested group-box-cancel"> E-Layer
                             2
                             Object</div>
-                        <div style="width: 20%;" class="group-box group-box-requested group-box-received"> E-Layer
+                        <div style="width: 20%;" class="group-box group-box-requested  fragment custom group-box-cancel"
+                            data-fragment-index="2"> E-Layer
                             2
                             Object</div>
                         <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
-                            data-fragment-index="0"> E-Layer 2
+                            data-fragment-index="1"> E-Layer 2
+                            Object</div>
+
+                    </div>
+                    <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 1 </div>
+                        <div style="width: 20%;" class="group-box group-box-requested group-box-received"
+                            data-fragment-index="2"> E-Layer 1
+                            Object</div>
+                        <div style="width: 20%;" class="group-box group-box-requested  fragment custom group-box-cancel"
+                            data-fragment-index="2"> E-Layer 1
+                            Object</div>
+                        <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
+                            data-fragment-index="1"> E-Layer 1
+                            Object</div>
+                    </div>
+                    <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 0 </div>
+                        <div style="width: 20%;" class="group-box group-box-requested group-box-received"
+                            data-fragment-index="2"> Base Layer Object</div>
+                        <div style="width: 20%;" class="group-box group-box-requested"> Base Layer
+                            Object</div>
+                        <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
+                            data-fragment-index="1"> Base
+                            Layer Object</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-transition="none">
+                <div class="group-box group-box-requested">
+                    <div
+                        style="margin-left: 18%; width: 68%; border: 10px solid rgb(118, 81, 13); position: absolute; z-index: 10;">
+                    </div>
+                    <div style="margin-left: 20%; width: 73%; border: 10px solid wheat;"></div>
+                    <div>
+                        <div style="display: flex;">
+                            <div style="width: 20%; margin-left: 21.5%">250ms</div>
+                            <div style="width: 20%; margin-left: 5%">250ms</div>
+                            <div style="width: 20%; margin-left: 7%">
+                                250ms</div>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="arrow" style="width: 20%; margin-left: 21.5%"></div>
+                            <div class="arrow" style="width: 20%; margin-left: 5%"></div>
+                            <div class="arrow" style="width: 20%; margin-left: 7%"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 3 </div>
+                        <div style="width: 20%;" class="group-box group-box-requested group-box-cancel">
+                            E-Layer 3
+                            Object</div>
+                        <div style="width: 20%;" class="group-box group-box-requested group-box-cancel">
+                            E-Layer 3
+                            Object</div>
+                        <div style="width: 20%;" class="group-box group-box-requested custom  group-box-received"
+                            data-fragment-index="1"> E-Layer 3
+                            Object</div>
+                    </div>
+
+                    <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 2 </div>
+                        <div style="width: 20%;" class="group-box group-box-requested group-box-cancel"> E-Layer
+                            2
+                            Object</div>
+                        <div style="width: 20%;" class="group-box group-box-requested  group-box-cancel"
+                            data-fragment-index="0"> E-Layer
+                            2
+                            Object</div>
+                        <div style="width: 20%;" class="group-box group-box-requested custom  group-box-received"
+                            data-fragment-index="1"> E-Layer
+                            2
                             Object</div>
 
                     </div>
@@ -880,20 +954,23 @@
                         <div style="width: 20%;" class="group-box group-box-requested group-box-received"
                             data-fragment-index="0"> E-Layer 1
                             Object</div>
-                        <div style="width: 20%;" class="group-box group-box-requested group-box-received"> E-Layer 1
-                            Object</div>
-                        <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
+                        <div style="width: 20%;" class="group-box group-box-requested  group-box-cancel"
                             data-fragment-index="0"> E-Layer 1
+                            Object</div>
+                        <div style="width: 20%;" class="group-box group-box-requested custom  group-box-received"
+                            data-fragment-index="1"> E-Layer
+                            1
                             Object</div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
                         <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 0 </div>
                         <div style="width: 20%;" class="group-box group-box-requested group-box-received"
                             data-fragment-index="0"> Base Layer Object</div>
-                        <div style="width: 20%;" class="group-box group-box-requested group-box-received"> Base Layer
+                        <div style="width: 20%;" class="group-box group-box-requested custom  group-box-received"
+                            data-fragment-index="0"> Base Layer
                             Object</div>
-                        <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
-                            data-fragment-index="0"> Base
+                        <div style="width: 20%;" class="group-box group-box-requested custom  group-box-received"
+                            data-fragment-index="1"> Base
                             Layer Object</div>
                     </div>
                 </div>
@@ -1147,6 +1224,24 @@
 
             <section>
                 <video src="assets/dark_animation.mp4" controls autoplay loop></video>
+            </section>
+
+            <section>
+                <div style="font-size: 70px;">ACK</div>
+                <br>
+                <ul>
+                    <li>Dr. Madhan</li>
+                    <ul>
+                        <li>Introducing me to this project and mentoring me</li>
+                    </ul>
+                    <br>
+                    <li>Prof S. Krishnamoorthy + DAWN Lab, IITM</li>
+                    <ul>
+                        <li>Guidance and Peer Group</li>
+                        <li>Server Infrastructure for testing</li>
+                    </ul>
+                    <br>
+                </ul>
             </section>
         </div>
     </div>
