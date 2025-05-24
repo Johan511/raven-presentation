@@ -372,7 +372,7 @@
                 </div>
             </section>
 
-            <section>
+            <!-- <section>
                 <h3>Cons of existing protocols</h3>
                 <b>Latency</b>
             </section>
@@ -401,6 +401,14 @@
                 <div style="font-size: 35px;">
                     High latencies mean slower adaptation to network conditions.
                 </div>
+            </section> -->
+
+            <section>
+                <h3 class="fragment"> Latency of the order of 100ms </h3>
+                <br>
+                <h3 class="fragment"> Network Adaptability </h3>
+                <br>
+                <h3 class="fragment"> Trading latency for scalability </h3>
             </section>
 
             <style>
@@ -451,7 +459,7 @@
                 }
             </style>
 
-            <section data-transition="slide-in">
+            <!-- <section data-transition="slide-in">
                 <div style="display: flex;">
                     <div style="margin-right: 28.7%;"> 0s </div>
                     <div style="margin-right: 28.7%;"> 2s </div>
@@ -633,19 +641,15 @@
                     </div>
                 </div>
                 One of two scenarios play out
-            </section>
+            </section> -->
 
             <section>
-                Protocol with strict timing guarentees without compromising on latency
-            </section>
-
-            <section>
-                <div>Track</div>
+                <div>Media Stream</div>
                 <div class="group-box">
                     <div class="fragment" data-fragment-index="0">
                         <div
                             style="display: flex; align-items: center; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 50%; padding: 18px; margin: 21px; font-size: 20px;"> Group 3 (Publisher
+                            <div style="width: 50%; padding: 18px; margin: 21px; font-size: 20px;"> Track 3 (Publisher
                                 Priority 3) </div>
                             <div style="width: 29%;" class=""> </div>
                             <div style="width: 29%; font-size: 30px;" class="fragment" data-fragment-index="0">
@@ -655,7 +659,7 @@
 
                         <div
                             style="display: flex; align-items: center; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 50%; padding: 18px; margin: 21px; font-size: 20px;"> Group 2 (Publisher
+                            <div style="width: 50%; padding: 18px; margin: 21px; font-size: 20px;"> Track 2 (Publisher
                                 Priority 2) </div>
                             <div style="width: 29%;" class=""> </div>
                             <div style="width: 29%; font-size: 30px;" class="fragment" data-fragment-index="0">
@@ -665,7 +669,7 @@
 
                         <div
                             style="display: flex; align-items: center; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 50%; padding: 18px; margin: 21px; font-size: 20px;"> Group 1 (Publisher
+                            <div style="width: 50%; padding: 18px; margin: 21px; font-size: 20px;"> Track 1 (Publisher
                                 Priority 1) </div>
                             <div style="width: 29%;" class=""> </div>
                             <div style="width: 29%; font-size: 30px;" class="fragment" data-fragment-index="0">
@@ -675,7 +679,7 @@
 
                         <div
                             style="display: flex; align-items: center; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 50%; padding: 18px; margin: 21px; font-size: 20px;"> Group 0 (Publisher
+                            <div style="width: 50%; padding: 18px; margin: 21px; font-size: 20px;"> Track 0 (Publisher
                                 Priority 0) </div>
                             <div style="width: 29%;" class=""> </div>
                             <div style="width: 29%; font-size: 30px;" class="fragment" data-fragment-index="0"> Base
@@ -729,7 +733,7 @@
                     <div style="margin-left: 20%; width: 73%; border: 10px solid wheat;"></div>
                     <div>
                         <div style="display: flex; font-size: 25px; margin-left: 28%;">
-                            <div style="margin-right: 26%;" class="fragment fade-left" data-fragment-index="1"> 250ms
+                            <div style="margin-right: 26%;" class="fragment fade-left" data-fragment-index="1"> 100ms
                             </div>
                         </div>
                         <div style="display: flex;">
@@ -739,26 +743,26 @@
                     </div>
 
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 3 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 3 </div>
                         <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
                             data-fragment-index="1"> E-Layer 3
                             Object</div>
                     </div>
 
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 2 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 2 </div>
                         <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
                             data-fragment-index="1"> E-Layer 2
                             Object</div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 1 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 1 </div>
                         <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
                             data-fragment-index="1"> E-Layer 1
                             Object</div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 0 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 0 </div>
                         <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
                             data-fragment-index="1"> Base
                             Layer Object</div>
@@ -774,9 +778,9 @@
                     <div style="margin-left: 20%; width: 73%; border: 10px solid wheat;"></div>
                     <div>
                         <div style="display: flex; font-size: 25px; margin-left: 28%;">
-                            <div style="margin-right: 26%;"> 250ms
+                            <div style="margin-right: 26%;"> 100ms
                             </div>
-                            <div style="margin-right: 20%;" class="fragment fade-left" data-fragment-index="1"> 250ms
+                            <div style="margin-right: 20%;" class="fragment fade-left" data-fragment-index="1"> 100ms
                             </div>
                         </div>
                         <div style="display: flex;">
@@ -787,7 +791,7 @@
                     </div>
 
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 3 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 3 </div>
                         <div style="width: 20%;" class="group-box group-box-requested fragment custom group-box-cancel"
                             data-fragment-index="2">
                             E-Layer 3
@@ -798,7 +802,7 @@
                     </div>
 
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 2 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 2 </div>
                         <div style="width: 20%;" class="group-box group-box-requested fragment custom group-box-cancel"
                             data-fragment-index="2"> E-Layer
                             2
@@ -809,7 +813,7 @@
 
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 1 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 1 </div>
                         <div style="width: 20%;" class="group-box group-box-requested group-box-received"> E-Layer 1
                             Object</div>
                         <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
@@ -817,7 +821,7 @@
                             Object</div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 0 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 0 </div>
                         <div style="width: 20%;" class="group-box group-box-requested group-box-received"> Base Layer
                             Object</div>
                         <div style="width: 20%;" class="group-box group-box-requested fragment fade-left"
@@ -835,10 +839,10 @@
                     <div style="margin-left: 20%; width: 73%; border: 10px solid wheat;"></div>
                     <div>
                         <div style="display: flex;">
-                            <div style="width: 20%; margin-left: 21.5%">250ms</div>
-                            <div style="width: 20%; margin-left: 5%">250ms</div>
+                            <div style="width: 20%; margin-left: 21.5%">100ms</div>
+                            <div style="width: 20%; margin-left: 5%">100ms</div>
                             <div class="fragment fade-left" data-fragment-index="1" style="width: 20%; margin-left: 7%">
-                                250ms</div>
+                                100ms</div>
                         </div>
                         <div style="display: flex;">
                             <div class="arrow" style="width: 20%; margin-left: 21.5%"></div>
@@ -849,7 +853,7 @@
                     </div>
 
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 3 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 3 </div>
                         <div style="width: 20%;" class="group-box group-box-requested group-box-cancel">
                             E-Layer 3
                             Object</div>
@@ -863,7 +867,7 @@
                     </div>
 
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 2 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 2 </div>
                         <div style="width: 20%;" class="group-box group-box-requested group-box-cancel"> E-Layer
                             2
                             Object</div>
@@ -877,7 +881,7 @@
 
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 1 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 1 </div>
                         <div style="width: 20%;" class="group-box group-box-requested group-box-received"
                             data-fragment-index="2"> E-Layer 1
                             Object</div>
@@ -889,7 +893,7 @@
                             Object</div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 0 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 0 </div>
                         <div style="width: 20%;" class="group-box group-box-requested group-box-received"
                             data-fragment-index="2"> Base Layer Object</div>
                         <div style="width: 20%;" class="group-box group-box-requested"> Base Layer
@@ -909,10 +913,10 @@
                     <div style="margin-left: 20%; width: 73%; border: 10px solid wheat;"></div>
                     <div>
                         <div style="display: flex;">
-                            <div style="width: 20%; margin-left: 21.5%">250ms</div>
-                            <div style="width: 20%; margin-left: 5%">250ms</div>
+                            <div style="width: 20%; margin-left: 21.5%">100ms</div>
+                            <div style="width: 20%; margin-left: 5%">100ms</div>
                             <div style="width: 20%; margin-left: 7%">
-                                250ms</div>
+                                100ms</div>
                         </div>
                         <div style="display: flex;">
                             <div class="arrow" style="width: 20%; margin-left: 21.5%"></div>
@@ -921,7 +925,7 @@
                         </div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 3 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 3 </div>
                         <div style="width: 20%;" class="group-box group-box-requested group-box-cancel">
                             E-Layer 3
                             Object</div>
@@ -934,7 +938,7 @@
                     </div>
 
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 2 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 2 </div>
                         <div style="width: 20%;" class="group-box group-box-requested group-box-cancel"> E-Layer
                             2
                             Object</div>
@@ -949,7 +953,7 @@
 
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 1 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 1 </div>
                         <div style="width: 20%;" class="group-box group-box-requested group-box-received"
                             data-fragment-index="0"> E-Layer 1
                             Object</div>
@@ -962,7 +966,7 @@
                             Object</div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Group 0 </div>
+                        <div style="width: 9%; padding: 18px; margin: 21px 9px; font-size: 20px;"> Track 0 </div>
                         <div style="width: 20%;" class="group-box group-box-requested group-box-received"
                             data-fragment-index="0"> Base Layer Object</div>
                         <div style="width: 20%;" class="group-box group-box-requested custom  group-box-received"
@@ -1225,11 +1229,11 @@
                 <video src="assets/dark_animation.mp4" controls autoplay loop></video>
             </section>
 
-            <section>
+            <!-- <section>
                 <video src="assets/multi_animation.mp4" controls autoplay loop></video>
-            </section>
+            </section> -->
 
-            <section>
+            <!-- <section>
                 Why not to use this protocol
             </section>
 
@@ -1247,20 +1251,20 @@
             <section data-transition="slide-in">
                 <div class="group-box group-box-requested">
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 3 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 3 </div>
                         <div class="group-box group-box-requested"> </div>
                     </div>
 
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 2 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 2 </div>
                         <div class="group-box group-box-requested"> </div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 1 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 1 </div>
                         <div class="group-box group-box-requested"> </div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 0 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 0 </div>
                         <div class="group-box group-box-requested"> </div>
                     </div>
                 </div>
@@ -1269,23 +1273,23 @@
             <section data-transition="none">
                 <div class="group-box group-box-requested">
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 3 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 3 </div>
                         <div class="group-box group-box-cancel"> </div>
                         <div class="group-box group-box-requested"> </div>
                     </div>
 
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 2 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 2 </div>
                         <div class="group-box group-box-cancel"> </div>
                         <div class="group-box group-box-requested"> </div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 1 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 1 </div>
                         <div class="group-box group-box-cancel"> </div>
                         <div class="group-box group-box-requested"> </div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 0 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 0 </div>
                         <div class="group-box group-box-requested"> </div>
                         <div class="group-box group-box-requested"> </div>
                     </div>
@@ -1295,7 +1299,7 @@
             <section data-transition="none">
                 <div class="group-box group-box-requested">
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 3 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 3 </div>
                         <div class="group-box group-box-cancel"> </div>
                         <div class="group-box group-box-cancel"> </div>
                         <div class="group-box group-box-cancel"> </div>
@@ -1303,21 +1307,21 @@
                     </div>
 
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 2 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 2 </div>
                         <div class="group-box group-box-cancel"> </div>
                         <div class="group-box group-box-cancel"> </div>
                         <div class="group-box group-box-cancel"> </div>
                         <div class="group-box group-box-requested"> </div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 1 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 1 </div>
                         <div class="group-box group-box-cancel"> </div>
                         <div class="group-box group-box-cancel"> </div>
                         <div class="group-box group-box-cancel"> </div>
                         <div class="group-box group-box-requested"> </div>
                     </div>
                     <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 0 </div>
+                        <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 0 </div>
                         <div class="group-box group-box-requested group-box-received"> </div>
                         <div class="group-box group-box-requested"> </div>
                         <div class="group-box group-box-requested"> </div>
@@ -1330,7 +1334,7 @@
                 <section data-transition="none">
                     <div class="group-box group-box-requested">
                         <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 3 </div>
+                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 3 </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
@@ -1341,7 +1345,7 @@
                         </div>
 
                         <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 2 </div>
+                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 2 </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
@@ -1351,7 +1355,7 @@
                             <div class="group-box group-box-requested group-box-received"> </div>
                         </div>
                         <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 1 </div>
+                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 1 </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
@@ -1361,7 +1365,7 @@
                             <div class="group-box group-box-requested group-box-received"> </div>
                         </div>
                         <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 0 </div>
+                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 0 </div>
                             <div class="group-box group-box-requested group-box-received"> </div>
                             <div class="group-box group-box-requested group-box-received"> </div>
                             <div class="group-box group-box-requested"> </div>
@@ -1376,7 +1380,7 @@
                 <section data-transition="none">
                     <div class="group-box group-box-requested">
                         <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 3 </div>
+                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 3 </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
@@ -1389,7 +1393,7 @@
                         </div>
 
                         <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 2 </div>
+                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 2 </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
@@ -1401,7 +1405,7 @@
                             <div class="group-box group-box-cancel"> </div>
                         </div>
                         <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 1 </div>
+                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 1 </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
                             <div class="group-box group-box-cancel"> </div>
@@ -1413,7 +1417,7 @@
                             <div class="group-box group-box-cancel"> </div>
                         </div>
                         <div style="display: flex; border-radius: 10px; border: 0.1px solid greenyellow; margin: 30px;">
-                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Group 0 </div>
+                            <div style="width: 9%; padding: 18px; margin: 10px 9px; font-size: 20px;"> Track 0 </div>
                             <div class="group-box group-box-requested group-box-received"> </div>
                             <div class="group-box group-box-requested group-box-received"> </div>
                             <div class="group-box group-box-requested group-box-received"> </div>
@@ -1461,7 +1465,488 @@
                 <div>
                     A must send priority for <br> publishers and subscribers
                 </div>
+            </section> -->
+
+            <section>
+                <h2 class="fragment"> This protocol is very bad </h2>
+                <br>
+                <div class="fragment">
+                    We have stream priorities only at the transport layer
+                </div>
             </section>
+
+            <style>
+                .container {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+
+                .object {
+                    padding: 10px;
+                    height: 100%;
+                    margin: 5px;
+                    border: darkkhaki;
+                    border-width: 3px;
+                    border-style: solid;
+                    border-radius: 10px;
+                    font-size: 1.5rem;
+                    flex-shrink: 0;
+                }
+
+                .transport-layer {
+                    width: 34rem;
+                    height: 8rem;
+                    border: 3px solid purple;
+                    padding-right: 10px;
+                    border-radius: 10px;
+                }
+
+                .underlying-layer {
+                    width: 34rem;
+                    height: 8rem;
+                    border: 3px solid brown;
+                    padding-right: 10px;
+                    border-radius: 10px;
+                }
+            </style>
+
+            <section data-transition="slide-in">
+                <h2>Time = 0</h2>
+                <div style="display: flex;">
+                    <div style="margin-right: -80px;">
+                        Transport Layer
+                        <div class="transport-layer container">
+                            <div class="container">
+                                <div class="object">
+                                    <div>t = 4</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 0</div>
+                                </div>
+
+                                <div class="object">
+                                    <div>t = 0</div>
+                                    <div>id = 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <br><br><br><br><br>
+                        Underlying layer
+                        <div class="underlying-layer">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-transition="none">
+                <h2>Time = 0</h2>
+                <div style="display: flex;">
+                    <div style="margin-right: -80px;">
+                        Transport Layer
+                        <div class="transport-layer container">
+                            <div class="container">
+                                <div class="object">
+                                    <div>t = 4</div>
+                                    <div>id = 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <br><br><br><br><br>
+                        Underlying layer
+                        <div class="underlying-layer container">
+                            <div class="container">
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 0</div>
+                                </div>
+
+                                <div class="object">
+                                    <div>t = 0</div>
+                                    <div>id = 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-transition="none">
+                <h2 style="text-transform: none;">TIME = 250 ms</h2>
+                <div style="display: flex;">
+                    <div style="margin-right: -80px;">
+                        Transport Layer
+                        <div class="transport-layer container">
+                            <div class="container">
+                                <div class="object">
+                                    <div>t = 4</div>
+                                    <div>id = 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <br><br><br><br><br>
+                        Underlying layer
+                        <div class="underlying-layer container">
+                            <div class="container">
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 0</div>
+                                </div>
+
+                                <div class="object" style="border-color: green;">
+                                    <div>t = 0</div>
+                                    <div>id = 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-transition="none">
+                <h2 style="text-transform: none;">TIME = 250 ms</h2>
+                <div style="display: flex;">
+                    <div style="margin-right: -80px;">
+                        Transport Layer
+                        <div class="transport-layer container">
+                            <div class="container">
+                                <div class="object" style="border-color: red;">
+                                    <div>t = 4</div>
+                                    <div>id = 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <br><br><br><br><br>
+                        Underlying layer
+                        <div class="underlying-layer container">
+                            <div class="container">
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 0</div>
+                                </div>
+
+                                <div class="object" style="border-color: green;">
+                                    <div>t = 0</div>
+                                    <div>id = 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-transition="none">
+                <h2 style="text-transform: none;">TIME = 250 ms</h2>
+                <div style="display: flex;">
+                    <div style="margin-right: -80px;">
+                        Transport Layer
+                        <div class="transport-layer container">
+                            <div class="container">
+                                <div class="object">
+                                    <div>t = 4</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div style="background-color: maroon;" class="object">
+                                    <div>t = 0</div>
+                                    <div>id = 1</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <br><br><br><br><br>
+                        Underlying layer
+                        <div class="underlying-layer container">
+                            <div class="container">
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 0</div>
+                                </div>
+
+                                <div class="object" style="border-color: green;">
+                                    <div>t = 0</div>
+                                    <div>id = 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section data-transition="none">
+                <h2 style="text-transform: none;">TIME = 250 ms</h2>
+                <div style="display: flex;">
+                    <div style="margin-right: -80px;">
+                        Transport Layer
+                        <div class="transport-layer container">
+                            <div class="container">
+                                <div class="object">
+                                    <div>t = 4</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 1</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <br><br><br><br><br>
+                        Underlying layer
+                        <div class="underlying-layer container">
+                            <div class="container">
+                                <div style="background-color: maroon;" class="object">
+                                    <div>t = 0</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-transition="none">
+                <h2 style="text-transform: none;">TIME = 500 ms</h2>
+                <div style="display: flex;">
+                    <div style="margin-right: -80px;">
+                        Transport Layer
+                        <div class="transport-layer container">
+                            <div class="container">
+                                <div class="object" style="border-color: red;">
+                                    <div>t = 4</div>
+                                    <div>id = 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <br><br><br><br><br>
+                        Underlying layer
+                        <div class="underlying-layer container">
+                            <div class="container" style="flex-wrap: nowrap; overflow-x:;">
+                                  <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 2</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 2</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 2</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 0</div>
+                                    <div>id = 2</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div style="background-color: maroon;" class="object">
+                                    <div>t = 0</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section data-transition="none">
+                <h2 style="text-transform: none;">TIME = 750 ms</h2>
+                <div style="display: flex;">
+                    <div style="margin-right: -80px;">
+                        Transport Layer
+                        <div class="transport-layer container">
+                            <div class="container">
+                                <div class="object" style="border-color: red;">
+                                    <div>t = 4</div>
+                                    <div>id = 3</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <br><br><br><br><br>
+                        Underlying layer
+                        <div class="underlying-layer container">
+                            <div class="container" style="flex-wrap: nowrap; overflow-x:;">
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 3</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 3</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 3</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 0</div>
+                                    <div>id = 3</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 2</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 2</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 2</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 0</div>
+                                    <div>id = 2</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 1</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div style="background-color: maroon;" class="object">
+                                    <div>t = 0</div>
+                                    <div>id = 1</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 3</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object">
+                                    <div>t = 2</div>
+                                    <div>id = 0</div>
+                                </div>
+                                <div class="object" style="border-color: green;">
+                                    <div>t = 1</div>
+                                    <div>id = 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
             <section>
                 <div style="font-size: 70px;">ACK</div>
