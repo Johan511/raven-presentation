@@ -991,7 +991,7 @@
 
             <section>
                 <div class="netem-box" style="left: 15%; top: 20%">
-                    loss=0.5% <br> bitrate=16mbps<br> delay=20ms 2ms
+                    loss=0.5% <br> bitrate=16mbps<br> delay=20ms &plusmn 2ms
                 </div>
                 <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
                     <div>
@@ -1015,7 +1015,7 @@
 
             <section>
                 <div class="netem-box" style="left: 15%; top: 20%">
-                    loss=0.5% <br> bitrate=16mbps<br> delay=20ms 2ms
+                    loss=0.5% <br> bitrate=16mbps<br> delay=20ms &plusmn 2ms
                 </div>
                 <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
                     <div>
@@ -1056,7 +1056,7 @@
 
             <section>
                 <div class="netem-box" style="left: 28%; top: 20%">
-                    loss=0.5% <br> bitrate=8mbps<br> delay=20ms 2ms
+                    loss=0.5% <br> bitrate=8mbps<br> delay=20ms &plusmn 2ms
                 </div>
                 <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
                     <div>
@@ -1080,7 +1080,7 @@
 
             <section>
                 <div class="netem-box" style="left: 28%; top: 20%">
-                    loss=0.5% <br> bitrate=8mbps<br> delay=20ms 2ms
+                    loss=0.5% <br> bitrate=8mbps<br> delay=20ms &plusmn 2ms
                 </div>
                 <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
                     <div>
@@ -1121,7 +1121,7 @@
 
             <section>
                 <div class="netem-box" style="left: 43%; top: 20%">
-                    loss=3% <br> bitrate=4mbps<br> delay=20ms 2ms
+                    loss=3% <br> bitrate=4mbps<br> delay=20ms &plusmn 2ms
                 </div>
                 <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
                     <div>
@@ -1162,7 +1162,7 @@
 
             <section>
                 <div class="netem-box" style="left: 56%; top: 20%">
-                    loss=0.5% <br> bitrate=65mbps<br> delay=20ms 2ms
+                    loss=0.5% <br> bitrate=64mbps<br> delay=20ms &plusmn 2ms
                 </div>
                 <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
                     <div>
@@ -1186,7 +1186,7 @@
 
             <section>
                 <div class="netem-box" style="left: 56%; top: 20%">
-                    loss=0.5% <br> bitrate=65mbps<br> delay=20ms 2ms
+                    loss=0.5% <br> bitrate=64mbps<br> delay=20ms &plusmn 2ms
                 </div>
                 <div style="position: absolute; font-size: 15px; left: 89%; top: 15.5%">
                     <div>
@@ -1468,7 +1468,50 @@
             </section> -->
 
             <section>
-                <h2 class="fragment"> This protocol is very bad </h2>
+                <h2> This protocol is very bad </h2>
+            </section>
+
+            <section>
+                <table>
+                    <tr>
+                        <td><strong>Bandwidth:</strong> 2 Mbps</td>
+                        <td><strong>Delay:</strong> 20 ms ± 2 ms</td>
+                    </tr>
+                </table>
+                
+                <br>
+                <table class="fragment">
+                    <thead>
+                        <tr>
+                            <th> Loss </th>
+                            <th> Latency </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="fragment">
+                            <td> 15% </td>
+                            <td> ~100ms </td>
+                        </tr>
+                        <tr class="fragment">
+                            <td> 10% </td>
+                            <td> ~100ms </td>
+                        </tr>
+                        <tr class="fragment">
+                            <td> 5% </td>
+                            <td> 200 - 500ms </td>
+                        </tr>
+                        <tr class="fragment">
+                            <td> 0% </td>
+                            <td> 3000 - 5000ms </td>
+                        </tr>
+                         <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2> This protocol is very bad </h2>
                 <br>
                 <div class="fragment">
                     We have stream priorities only at the transport layer
@@ -1809,8 +1852,8 @@
                         <br><br><br><br><br>
                         Underlying layer
                         <div class="underlying-layer container">
-                            <div class="container" style="flex-wrap: nowrap; overflow-x:;">
-                                  <div class="object">
+                            <div class="container" style="flex-wrap: nowrap;">
+                                <div class="object">
                                     <div>t = 3</div>
                                     <div>id = 2</div>
                                 </div>
@@ -1822,7 +1865,7 @@
                                     <div>t = 1</div>
                                     <div>id = 2</div>
                                 </div>
-                                <div class="object">
+                                <div class="object" style="background-color: maroon;">
                                     <div>t = 0</div>
                                     <div>id = 2</div>
                                 </div>
@@ -1880,7 +1923,7 @@
                         <br><br><br><br><br>
                         Underlying layer
                         <div class="underlying-layer container">
-                            <div class="container" style="flex-wrap: nowrap; overflow-x:;">
+                            <div class="container" style="flex-wrap: nowrap;">
                                 <div class="object">
                                     <div>t = 3</div>
                                     <div>id = 3</div>
@@ -1893,7 +1936,7 @@
                                     <div>t = 1</div>
                                     <div>id = 3</div>
                                 </div>
-                                <div class="object">
+                                <div class="object" style="background-color: maroon;">
                                     <div>t = 0</div>
                                     <div>id = 3</div>
                                 </div>
@@ -1909,7 +1952,7 @@
                                     <div>t = 1</div>
                                     <div>id = 2</div>
                                 </div>
-                                <div class="object">
+                                <div class="object" style="background-color: maroon;">
                                     <div>t = 0</div>
                                     <div>id = 2</div>
                                 </div>
@@ -1947,6 +1990,83 @@
                 </div>
             </section>
 
+            <section>
+                <div> The application is aware of the deadline </div>
+                <br>
+                <div> Not the transport layer </div>
+                <br>
+                <div class="fragment" style="color: #EF5350;"> Add Deadline awareness at the transport layer </div>
+            </section>
+
+            <section>
+                <h3> We make a couple of changes</h3>
+            </section>
+
+            <section data-auto-animate>
+                <h3 class="fragment"> DELIVERY_TIMEOUT </h3>
+                <br>
+                <h3 class="fragment"> BBR </h3>
+                <br>
+                <h3 class="fragment"> Estimate Delivery Time Point </h3>
+            </section>
+
+            <section>
+                <pre data-nohighlight data-trim data-noescape><div>
+Every time a Data Frame is written:
+
+    ExpectedDelay = (BytesInFlight + PendingDataInStream) 
+                            / ExpectedBandwidth
+
+    if (CurrentTime + ExpectedDelay > Deadline)
+        Stop the send
+        Abort the stream
+
+                </div></pre>
+            </section>
+
+            <section>
+                <div> We have made necessary changes to MsQuic to query <code>BytesInFlight</code> and
+                    <code>BBRBandwidth</code>
+                </div>
+                <br><br>
+                <div class="fragment"> We do some correction on <code>BBRBandwidth</code> to get the
+                    <code>ExpectedBandwidth</code>
+                </div>
+            </section>
+
+
+            <section>
+                <h4>Linear Latency Cost - Exponential Scalability</h4>
+            </section>
+
+            <section>
+                <pre class="mermaid">
+                        graph LR
+                            classDef circle stroke:#ffffff,stroke-width:2px,color:#ffffff;
+
+                            B((#nbsp;#nbsp; #nbsp; Relay1)):::circle
+                            C((#nbsp;#nbsp; #nbsp; Relay2)):::circle
+                            D((#nbsp;#nbsp; #nbsp; Relay3)):::circle
+
+                            S4[Subscribers]
+
+                            Publisher --> B
+                            B --> C
+                            C --> D
+                            D --> S4
+
+                          </pre>
+                <br>
+                <br>
+                <div class="fragment">Relays forward data as they receive</div>
+            </section>
+
+            <section>
+                <div class="netem-box" style="left: 25%; top: 20%">
+                    loss=0% <br> delay=20ms &plusmn 2ms
+                </div>
+                <img style="height: 100%;" src="assets/relay.png" alt="relay">
+            </section>
 
             <section>
                 <div style="font-size: 70px;">ACK</div>
@@ -1972,10 +2092,27 @@
     <script src="reveal/plugin/notes/notes.js"></script>
     <script src="reveal/plugin/markdown/markdown.js"></script>
     <script src="reveal/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
         // - https://revealjs.com/config/
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: "dark",
+            htmlLabels: true, // important!
+            themeVariables: {
+                primaryColor: "#1f77b4",
+                primaryTextColor: "#ffffff",
+                nodeTextColor: "#ffffff",
+                fontSize: "18px"
+            },
+            flowchart: {
+                // nodeSpacing: 100,
+                // rankSpacing: 120,
+                useMaxWidth: true
+            }
+        });
         Reveal.initialize({
             hash: true,
 
